@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="10dp">
+            <solid android:color="@color/appPrimaryColor"/>
+            <size android:width="310dp" android:height="208dp"/>
+            <corners android:radius="11dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/edite_undraw_good_doggy"/>
+</layer-list>
