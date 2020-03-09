@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Job_request_Activity"></activity>
+        <activity android:name=".Traking"></activity>
+        <activity android:name=".Job_request_Activity" />
         <activity android:name=".SignIn" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignUpOption" />
-        <activity android:name=".SecondPage"/>
+        <activity android:name=".SecondPage" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
