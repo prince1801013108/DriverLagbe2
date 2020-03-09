@@ -15,7 +15,7 @@ public class SignIn extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
 
         headerText=findViewById(R.id.headerTextId);
-        String text = "<font color=#E88574>Sign up</font> <font color=#ffffff>with\nemail and phone number</font>";
+        String text = "<font color=#E88574>Sign in</font> <font color=#ffffff>with\nphone number</font>";
         headerText.setText(Html.fromHtml(text));
     }
 }
