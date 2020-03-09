@@ -84,7 +84,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/asUserBtnId"
+                android:id="@+id/signUpBtnId"
                 android:layout_width="276dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
@@ -113,7 +113,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/signInId"
+            android:id="@+id/signInBtnId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
