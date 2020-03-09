@@ -23,6 +23,9 @@ public class SignUpOption extends AppCompatActivity implements View.OnClickListe
         headerText=findViewById(R.id.headerTextId);
         String text = "<font color=#E88574>Sign up</font> <font color=#ffffff>with\nemail and phone number</font>";
         headerText.setText(Html.fromHtml(text));
+
+        userBtn.setOnClickListener(this);
+        driverBtn.setOnClickListener(this);
     }
 
     @Override
