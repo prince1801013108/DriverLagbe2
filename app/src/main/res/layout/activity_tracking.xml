@@ -51,15 +51,15 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:layout_weight="1.5">
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:id="@+id/locationSkipBtnId"
             android:text="Skip"
             android:textAllCaps="false"
             android:textSize="15sp"
+            android:clickable="true"
             android:layout_marginBottom="5dp"
-            android:layout_gravity="center|"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_gravity="center"
             android:fontFamily="@font/raleway_regular"
             android:textColor="@color/black"
             android:layout_height="wrap_content"/>
