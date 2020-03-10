@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"/>
         <Button
             android:layout_width="wrap_content"
-            android:id="@+id/useMyLocationBtnId"
+            android:id="@+id/getStartBtnId"
             android:text="GET STARTED"
             android:textSize="17sp"
             android:layout_gravity="center"

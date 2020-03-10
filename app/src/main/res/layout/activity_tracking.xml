@@ -53,7 +53,7 @@
         android:layout_weight="1.5">
         <TextView
             android:layout_width="wrap_content"
-            android:id="@+id/locationSkipBtnId"
+            android:id="@+id/skipBtnId"
             android:text="Skip"
             android:textAllCaps="false"
             android:textSize="15sp"

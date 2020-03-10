@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:weightSum="6"
-    tools:context=".SplashScreen">
+    tools:context=".AcceptJob">
 
 
     <LinearLayout
@@ -57,7 +57,6 @@
             android:text="Skip"
             android:textAllCaps="false"
             android:textSize="15sp"
-            android:clickable="true"
             android:layout_marginBottom="5dp"
             android:layout_gravity="center"
             style="@style/Widget.AppCompat.Button.Borderless"

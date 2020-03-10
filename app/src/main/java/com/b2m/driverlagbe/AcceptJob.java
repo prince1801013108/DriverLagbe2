@@ -7,14 +7,14 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondPage extends AppCompatActivity implements View.OnClickListener{
+public class AcceptJob extends AppCompatActivity implements View.OnClickListener{
     Intent intent;
     Button skipBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_page);
+        setContentView(R.layout.activity_accept_job);
         skipBtn=findViewById(R.id.skipBtnId);
         skipBtn.setOnClickListener(this);
 
@@ -23,7 +23,7 @@ public class SecondPage extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.skipBtnId){
-            intent=new Intent(SecondPage.this,Tracking.class);
+            intent=new Intent(AcceptJob.this,Tracking.class);
             startActivity(intent);
         }
 

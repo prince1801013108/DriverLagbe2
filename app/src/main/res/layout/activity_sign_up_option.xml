@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:layout_width="wrap_content"
-        android:id="@+id/signInId"
+        android:id="@+id/signInBtnId"
         android:text="Sign in"
         android:textAllCaps="false"
         android:textSize="15sp"
