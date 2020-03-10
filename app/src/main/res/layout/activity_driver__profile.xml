@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#142274"
+    tools:context=".Driver_Profile">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/driver_lagbee_icon"/>
+
+    <androidx.appcompat.widget.ActionMenuView
+        android:layout_height="match_parent"
+       android:layout_width="wrap_content"
+        android:orientation="vertical"
+        
+        >
+
+        <item android:id="@+id/account"
+            android:icon="@drawable/ic_portrait_black_24dp"
+            android:title="My Account"/>
+        <item android:id="@+id/settings"
+            android:icon="@drawable/ic_brightness_high_black_24dp"
+            android:title="Settings"/>
+        <item android:id="@+id/mycart"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="My Cart"/>
+
+    </androidx.appcompat.widget.ActionMenuView>
+
+</LinearLayout>
