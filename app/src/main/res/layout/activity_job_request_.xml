@@ -30,40 +30,201 @@
     </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
+            android:background="#C5CAE9"
             android:orientation="horizontal"
             android:layout_height="match_parent"
             android:weightSum="3"
             android:gravity="center"
             >
-
-            <ImageView
+<!--            -->
+<!--            ImageView-->
+            <LinearLayout
+                android:padding="2dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_gravity=""
-                android:id="@+id/img_tube_bending"
-                android:src="@drawable/round_shape"
-                android:layout_marginRight="5dp"/>
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
 
-            <TextView
+
+                            <ImageView
+                                android:id="@+id/driver_img_job_request_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:layout_gravity="center"
+                                android:src="@drawable/round_shape"
+                                android:layout_marginRight="5dp"/>
+
+
+
+
+            </LinearLayout>
+<!--            TextName-->
+            <LinearLayout
+                android:padding="2dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Name of the player"
-
-                android:textSize="30sp"
-
-                ></TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="25$"
+                android:orientation="horizontal"
                 android:gravity="center"
-                android:textSize="30sp"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/name_job_request_textid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name of the Driver"
+                    android:textColor="#303F9F"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:gravity="center"
 
-                ></TextView>
+                    ></TextView>
+
+            </LinearLayout>
+<!--            text money-->
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:id="@+id/money_job_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="25$"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="25sp"
+
+                    ></TextView>
+                <TextView
+                    android:id="@+id/distence_job_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="25km"
+
+                    android:textColor="#886C6C"
+                    android:gravity="center"
+                    android:textSize="15sp"
+
+                    ></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<!--        from here new layout-->
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:id="@+id/pickup_job_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pickup"
+                    android:layout_gravity="left"
+                    android:textColor="#886C6C"
+                    android:gravity="center"
+                    android:textSize="15sp"
+
+                    ></TextView>
+                <TextView
+                    android:id="@+id/pickup_street_jtob_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Street,home"
+
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="25sp"
+
+                    ></TextView>
+            </LinearLayout>
+            <!--          dropup  -->
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:id="@+id/dropup_job_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dropup"
+                    android:layout_gravity="left"
+                    android:textColor="#886C6C"
+                    android:gravity="center"
+                    android:textSize="15sp"
+
+                    ></TextView>
+                <TextView
+                    android:id="@+id/dropup_street_jtob_request_txtid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="School, office"
+
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:textSize="25sp"
+
+                    ></TextView>
+            </LinearLayout>
+            <!--            text money-->
+            <LinearLayout
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+
+                >
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:background="@drawable/sign_up_page_btn_shape"
+                    android:text="Accept"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
