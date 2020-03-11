@@ -29,7 +29,7 @@ public class SignIn extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if(v.getId()==R.id.signUpBtnId){
-            intent=new Intent(SignIn.this,SignUp.class);
+            intent=new Intent(SignIn.this,Verification.class);
             startActivity(intent);
         }
 

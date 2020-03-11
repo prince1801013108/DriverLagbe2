@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="7"
+
     tools:context=".SignUpOption">
 
     <LinearLayout
@@ -68,8 +69,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:hint="mobile number"
-                    android:textAlignment="center" />
+                    android:hint="mobile number" />
 
             </LinearLayout>
 
