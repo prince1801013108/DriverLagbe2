@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Brand"
+        android:gravity="left"
+        android:fontFamily="@font/raleway_medium"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="Enter Vehicle Brand"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="Type Model Of Your Vehicle"
+
+            android:textAlignment="center"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="Type Year Of Model"
+            android:drawableRight="@drawable/dropdown"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="License Number"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="Type Your License Number"
+            android:textAlignment="center"
+            android:gravity="center" />
+ <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="Type the Color of Your Vehicle"
+            android:drawableRight="@drawable/dropdown"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/asDriverBtnId"
+            android:text="Done"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sign_up_page_btn_shape"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
