@@ -31,12 +31,14 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/raleway_bold"
             android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
             android:text="Enter Your OTP Code Here"
             android:textColor="@color/appPrimaryColor"
             android:textSize="15dp" />
         <LinearLayout
             android:gravity="center"
             android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
             android:layout_height="wrap_content">
 
             <EditText
@@ -87,6 +89,7 @@
             android:layout_width="276dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:background="@drawable/sign_up_page_btn_shape"
             android:fontFamily="@font/raleway_bold"
             android:text="Verify Now"

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EmptyNotification"></activity>
         <activity android:name=".Earn_money" />
         <activity android:name=".Tracking" />
         <activity android:name=".SearchDriver" />
@@ -17,7 +18,7 @@
         <activity android:name=".SignUp" />
         <activity android:name=".SignUpOption" />
         <activity android:name=".AcceptJob" />
-        <activity android:name=".SplashScreen"/>
+        <activity android:name=".SplashScreen" />
         <activity android:name=".Verification">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
