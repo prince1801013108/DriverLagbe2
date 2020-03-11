@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmptyNotification"></activity>
+        <activity android:name=".DocumentUpload"></activity>
+        <activity android:name=".EmptyNotification" />
         <activity android:name=".Earn_money" />
         <activity android:name=".Tracking" />
         <activity android:name=".SearchDriver" />
