@@ -32,13 +32,14 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="match_parent"
-            android:weightSum="4"
+            android:weightSum="3"
+            android:gravity="center"
             >
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:layout_gravity=""
                 android:id="@+id/img_tube_bending"
                 android:src="@drawable/round_shape"
@@ -50,10 +51,22 @@
                 android:layout_weight="1"
                 android:text="Name of the player"
 
-
+                android:textSize="30sp"
 
                 ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="25$"
+                android:gravity="center"
+                android:textSize="30sp"
+
+                ></TextView>
+
         </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>
