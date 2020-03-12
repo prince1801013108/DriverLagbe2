@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DocumentUpload"></activity>
+        <activity android:name=".DrivingLicence"></activity>
+        <activity android:name=".IdentityCard" />
+        <activity android:name=".DocumentUpload" />
         <activity android:name=".EmptyNotification" />
         <activity android:name=".Earn_money" />
         <activity android:name=".Tracking" />

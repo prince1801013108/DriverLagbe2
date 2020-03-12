@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".DrivingLicence">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="340dp"
+            android:background="@drawable/identity_background"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingLeft="5dp"
+            android:layout_height="192dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="128dp"
+                    android:src="@drawable/card"
+                    android:scaleType="fitXY"
+                    android:layout_height="86dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Driving Licence"
+                    android:textSize="16dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/appPrimaryColor"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="179dp"
+                    android:background="@drawable/identity_shape"
+                    android:layout_height="134dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Licence Number"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="AS66666" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expiration date"
+            android:gravity="left"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/sign_up_edit_text_back"
+            android:hint="MM/DD/YYYY"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/signInNextBtnId"
+            android:layout_width="276dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sign_up_page_btn_shape"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

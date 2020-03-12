@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/takePictureBtnId"
+        android:layout_width="303dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@drawable/id_choose_picture_btn_back"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Take a picture"
+        android:textAllCaps="false"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="17sp" />
+    <Button
+        android:id="@+id/choosePictureBtnId"
+        android:layout_width="303dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/id_choose_c_picture_btn_back"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Take a picture"
+        android:textAllCaps="false"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/cancelBtnId"
+        android:layout_width="303dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:background="@drawable/id_choose_cancle_btn_back"
+        android:fontFamily="@font/raleway_bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:textColor="@color/appPrimaryColor"
+        android:textSize="17sp" />
+
+</LinearLayout>
