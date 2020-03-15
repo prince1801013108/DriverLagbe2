@@ -120,5 +120,19 @@
 \n\nশহীদ ল্যান্স নায়েক বীরশ্রেষ্ঠ মুন্সি আব্দুর রউফের সমাধি পার্বত্য জেলা রাঙামাটির নানিয়ার চড়ে। তাঁর অপরিসীম বীরত্ব,সাহসীকতা ও দেশপ্রেমের জন্য বাংলাদেশ সরকার তাঁকে সর্ব্বোচ সম্মান বীরশ্রেষ্ঠ খেতাবে ভূষিত করে।
 
     </string>
+    <string name="title_activity_nab_menu_driver">nab_menu_driver</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_nav_menu_driver">nav_menu_driver</string>
 
 </resources>
