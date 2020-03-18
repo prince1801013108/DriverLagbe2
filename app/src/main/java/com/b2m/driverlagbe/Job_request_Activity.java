@@ -27,11 +27,12 @@ public class Job_request_Activity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String player_list=DriverName[position];
-                Toast.makeText(Job_request_Activity.this,,Toast.LENGTH_SHORT).show();
+                String player_list = DriverName[position];
+                Toast.makeText(Job_request_Activity.this,"Hi", Toast.LENGTH_SHORT).show();
 
 
             }
 
-    }
+        });
+}
 }

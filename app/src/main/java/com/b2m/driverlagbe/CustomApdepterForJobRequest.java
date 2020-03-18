@@ -20,8 +20,8 @@ public class CustomApdepterForJobRequest extends BaseAdapter {
 
     Context context;
     LayoutInflater inflater;
-    public   class CustomApdepterForJobRequest(Context context, int[]DriverImages, String[]DriverName,String[]Money, String[]Distence,
-    String[]Pickup_point,String[]Dropup_point )
+//    public   class CustomApdepterForJobRequest(Context context, int[]DriverImages, String[]DriverName,String[]Money, String[]Distence,
+//    String[]Pickup_point,String[]Dropup_point )
 
 
     {
