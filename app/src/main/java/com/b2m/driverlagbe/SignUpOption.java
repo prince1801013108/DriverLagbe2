@@ -33,11 +33,11 @@ public class SignUpOption extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.asDriverBtnId||v.getId()==R.id.asUserBtnId){
-            intent=new Intent(SignUpOption.this,SignUp.class);
+            intent=new Intent(SignUpOption.this, RegistationActivity.class);
             startActivity(intent);
         }
         if (v.getId()==R.id.signInBtnId){
-            intent=new Intent(SignUpOption.this,SignIn.class);
+            intent=new Intent(SignUpOption.this, MainActivity.class);
             startActivity(intent);
         }
 

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="340dp"
+            android:background="@drawable/identity_background"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="192dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="86dp"
+                    android:src="@drawable/name"
+                    android:scaleType="fitXY"
+                    android:layout_height="128dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Identity card"
+                    android:textSize="16dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/appPrimaryColor"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="179dp"
+                    android:background="@drawable/identity_shape"
+                    android:layout_height="134dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="340dp"
+            android:background="@drawable/identity_background"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="192dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="118dp"
+                    android:src="@drawable/card"
+                    android:scaleType="fitXY"
+                    android:layout_height="86dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Driving License"
+                    android:textSize="16dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/appPrimaryColor"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="179dp"
+                    android:background="@drawable/identity_shape"
+                    android:layout_height="134dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+</LinearLayout>

@@ -20,7 +20,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        signUpBtn=findViewById(R.id.signUpBtnId);
         signInBtn=findViewById(R.id.signInBtnId);
         headerText=findViewById(R.id.headerTextId);
         String text = "<font color=#E88574>Sign up</font> <font color=#ffffff>with\nemail and phone number</font>";
