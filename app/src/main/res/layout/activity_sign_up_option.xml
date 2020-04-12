@@ -6,7 +6,7 @@
     android:weightSum="7"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".SignUpOption">
+    tools:context=".LogInAndRes.SignUpOption">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="3"
@@ -80,13 +80,14 @@
         android:fontFamily="@font/raleway_regular"
         android:textColor="@color/black"
         android:layout_height="wrap_content"/>
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:id="@+id/signInBtnId"
         android:text="Sign in"
         android:textAllCaps="false"
         android:textSize="15sp"
         android:clickable="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:fontFamily="@font/raleway_bold"
         android:textColor="@color/appPrimaryColor"
         android:layout_height="wrap_content"/>

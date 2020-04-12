@@ -1,6 +1,5 @@
 package com.b2m.driverlagbe;
 
-import android.app.Notification;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -21,7 +20,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.navigation.ui.AppBarConfiguration;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.b2m.driverlagbe.Basic.EmptyNotification;
@@ -42,24 +43,30 @@ import com.squareup.picasso.Picasso;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    private AppBarConfiguration mAppBarConfiguration;
+    NavigationView navigationView;
+    private DatabaseReference driverData;
+    RecyclerView recyclerView;
 
     private DatabaseReference productRef;
-    private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Paper.init(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
 
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-       setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("User Account");
+        Toolbar toolbar = findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Driver Account");
         productRef= FirebaseDatabase.getInstance().getReference().child("Driver Info");
         Paper.init(this);
-        final DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        final DrawerLayout drawer = findViewById(R.id.drawer_layout2);
+        NavigationView navigationView = findViewById(R.id.nav_view2);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -110,13 +117,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 drivertViewHolder.name.setText(driver_model.getDriverName());
                 drivertViewHolder.exprence.setText(driver_model.getDriverExperiense());
                 drivertViewHolder.phoneNumber.setText(driver_model.getDriverNumber());
-                drivertViewHolder.lisence.setText(driver_model.getDriverLinsence());
+                //drivertViewHolder.lisence.setText(driver_model.getDriverLinsence());
 
                 Picasso.get().load(driver_model.getDriverImage()).into(drivertViewHolder.driverImage);
                 drivertViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(MainActivity.this, DriverDetailsActivity.class);
+                        Intent intent=new Intent(MainActivity2.this, DriverDetailsActivity.class);
                         intent.putExtra("pid",driver_model.getPid());
                         startActivity(intent);
 
@@ -144,26 +151,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();
 
-        if (id == R.id.userEditProfileId) {
-            Intent intent=new Intent(MainActivity.this, SettinsActivity.class);
+        if (id == R.id.driverEditProfileId) {
+            Intent intent=new Intent(MainActivity2.this, DriverData.class);
             startActivity(intent);
 
         }
-        else if (id == R.id.userNotificationId) {
-            Intent intent =new Intent(MainActivity.this, EmptyNotification.class);
+        else if (id == R.id.driverNotificationId) {
+            Intent intent =new Intent(MainActivity2.this, EmptyNotification.class);
             startActivity(intent);
 
         }
-        else if(id==R.id.nav_logOutId){
+        else if(id==R.id.driverlogoutId){
             Paper.book().destroy();
-            Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent=new Intent(MainActivity2.this, LoginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
-        else if(id==R.id.nav_exitId){
+        else if(id==R.id.driverexitId){
             finish();
             System.exit(0);
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return false;
@@ -179,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface arg0, int arg1) {
-                        MainActivity.super.onBackPressed();
+                        MainActivity2.super.onBackPressed();
                     }
                 }).create().show();
     }
@@ -198,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.logoutId){
             Paper.book().destroy();
-            Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent=new Intent(MainActivity2.this, LoginActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
 
@@ -212,4 +220,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return false;
     }
 }
+
 

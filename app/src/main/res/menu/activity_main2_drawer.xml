@@ -5,26 +5,23 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/driverEditProfileId"
             android:icon="@drawable/edit_icon"
-            android:id="@+id/userEditProfileId"
             android:title="Edit Profile" />
-<!--        <item-->
-<!--            android:id="@+id/nav_lost_news"-->
-<!--            android:title="Lost News" />-->
         <item
+            android:id="@+id/driverNotificationId"
             android:icon="@drawable/notifications_active_black_24dp"
-            android:id="@+id/userNotificationId"
             android:title="Notification" />
-
     </group>
+
     <item
+        android:id="@+id/driverlogoutId"
         android:icon="@drawable/logout_icon"
-        android:id="@+id/nav_logOutId"
-        android:title="Log Out" />
+        android:title="Log Out"
+        />
     <item
+        android:id="@+id/driverexitId"
         android:icon="@drawable/exit_icon"
-        android:id="@+id/nav_exitId"
-        android:title="Exit" />
-
-
+        android:title="Exit"
+        />
 </menu>

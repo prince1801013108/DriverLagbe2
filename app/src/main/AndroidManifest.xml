@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.b2m.driverlagbe">
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/app_icon"
+        android:icon="@mipmap/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/app_icon"
+        android:roundIcon="@mipmap/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Driver.DriverData"></activity>
-        <activity android:name=".DrivingLicence" />
-        <activity android:name=".IdentityCard" />
-        <activity android:name=".DocumentUpload" />
-        <activity android:name=".EmptyNotification" />
-        <activity android:name=".Earn_money" />
-        <activity android:name=".Tracking" />
-        <activity android:name=".SearchDriver" />
-        <activity android:name=".Job_request_Activity" />
-        <activity android:name=".SignIn" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SignUpOption" />
-        <activity android:name=".AcceptJob" />
-        <activity android:name=".Verification" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Driver.DriverDetailsActivity"></activity>
+        <activity android:name=".User.SettinsActivity" />
+        <activity android:name=".Driver.DrivingLicence" />
+        <activity android:name=".Basic.IdentityCard" />
+        <activity android:name=".User.DocumentUpload" />
+        <activity android:name=".Basic.Earn_money" />
+        <activity android:name=".Basic.Tracking" />
+        <activity android:name=".LogInAndRes.LoginActivity" />
+        <activity android:name=".Basic.AcceptJob" />
+        <activity android:name=".Basic.EmptyNotification"/>
+        <activity android:name=".Basic.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LocationEnable" />
+        <activity android:name=".Basic.LocationEnable" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".MainActivity2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegistationActivity" />
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Driver.DriverData"/>
+        <activity android:name=".LogInAndRes.RegistationActivity" />
+        <activity android:name=".LogInAndRes.SignUpOption" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>

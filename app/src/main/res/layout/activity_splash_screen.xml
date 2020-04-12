@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/appPrimaryColor"
     android:weightSum="2"
-    tools:context=".SplashScreen">
+    tools:context=".Basic.SplashScreen">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="1"
